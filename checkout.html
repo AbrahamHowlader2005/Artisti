@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisti</title>
+     
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/aos/css/aos.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font_awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/normalize/css/normalize.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="assets/css/checkout.css">
+
+</head>
+<body>
+
+<!-- ======= Header ======= -->
+ <section id="header">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-6 col-md-4 my_info" data-aos="fade-right" data-aos-delay="100">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"><span>&nbsp;&nbsp;My Wishlist</span></i>
+        <i class="fa fa-user" aria-hidden="true"><span>&nbsp;&nbsp;My Account</span></i>
+        <i class="fa fa-shopping-cart" aria-hidden="true"><span>&nbsp;&nbsp;My Cart</span></i>
+        <i class="fa fa-check" aria-hidden="true"><span>&nbsp;&nbsp;Checkout</span></i>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-md-offset-4 currency" data-aos="fade-right" data-aos-delay="100">
+        <p>US Dollar</p>
+        <p><img src="assets/images/england-flag.png" alt="">&nbsp;&nbsp;&nbsp;English</p>
+        <p><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;0 item(s) - $0.00</p>
+      </div>
+
+    </div>
+  </div>
+ </section>
+<!-- ======= Header Ends ======= -->
+
+
+<!-- ======= Navbar ======= -->
+ <section id="navigation_bar">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header" data-aos="fade-up" data-aos-delay="100">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/panel/panel@2x.png" alt="" class="img-responsive">
+          <img src="assets/images/logo.png" alt="" width="210" height="65">
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <p class="text-right hidden-xs" data-aos="fade-up" data-aos-delay="100">Login or Create an account</p>
+        <ul class="nav navbar-nav navbar-right text-uppercase">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li class="active"><a href="checkout.html">Checkout</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><i class="fa fa-search hidden-xs" aria-hidden="true"></i></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+ </section>
+<!-- ======= Navbar Ends ======= -->
+
+
+<!-- ======= Checkout Section Part Start ======= -->
+ <section id="checkout">
+  <div class="container-fluid nav">
+    <p><a href="index.html">Home</a> 
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+      <a href="checkout.html">Checkout</a></p>
+  </div>
+
+  <div class="container">
+    <p class="h1 heading">Checkout</p>
+    <p>Quisque elementum nibh at dolor pellentesque, a eleifend libero pharetra.</p>
+  </div>
+
+  <div class="container">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            1 Step: CHEACKOUT OPTION
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#option" aria-expanded="true" aria-controls="collapseOne">
+              <span class="pull-right"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+          </h4>
+        </div>
+        <div id="option" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="row">
+              <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <p class="h2">New Customer</p>
+                  <p>Register With us for future convenince</p>
+                  <div class="checkbox">
+                      <label>
+                          <input type="checkbox" value=""> Checkout as Guest
+                      </label>
+                  </div>
+                  <div class="checkbox">
+                      <label>
+                          <input type="checkbox" value=""> Register
+                      </label>
+                  </div>
+                  <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple 
+                    shopping addresses, view and track yours in your account and more.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <p class="h2">Registered Customers</p>
+                  <p>If you have an account with us, please log in.</p>
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i> Email* </div>
+                                    <input class="form-control" type="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i> Password* </div>
+                                    <input class="form-control" type="password" placeholder="Your Password" required>
+                                </div>
+                            </div>
+                            <div class="forgot pull-right">
+                                <a href="#">Forgot your password</a>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember my Password
+                                </label>
+                            </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <div class="continue">
+                <button type="submit" class="btn btn-default">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            2 Step: DELIVERY DETAILS
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#deliveryDetails" aria-expanded="true" aria-controls="collapseOne">
+              <span class="pull-right"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+          </h4>
+        </div>
+        <div id="deliveryDetails" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            <div class="row">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                          <label for="fullName" class="col-xs-3 col-sm-3 col-md-4 col-lg-3 control-label">Full Name <span>*</span> </label>
+                          <div class=" col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input class="form-control" type="text" id="fullName" placeholder="Your full name..." required></div>
+                    </div>
+                    <div class="form-group">
+                          <label for="phoneNo" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 control-label">Phone Number <span>*</span></label>
+                          <div class=" col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input class="form-control" type="text" id="phoneNo" placeholder="Your Number..." required></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="shippingAddress" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 control-label">Shipping Address <span>*</span></label>
+                        <div class=" col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                          <input class="form-control" type="text" id="shippingAddress" placeholder="House no. Black Road no..." required></div>
+                    </div>
+                  </form>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            3 Step: DELIVERY METHOD
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#deliveryMethod" aria-expanded="true" aria-controls="collapseThree">
+              <span class="pull-right"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+          </h4>
+        </div>
+        <div id="deliveryMethod" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <div class="radio">
+              <label>
+                <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..." checked>
+                Select a Courier Service
+              </label>
+          </div>
+            <div class="radio">
+                <label>
+                  <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                  Outside Dhaka Home Dellivery
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                  <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                  SA Paribahan
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                  <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                  Sundorban
+                </label>
+            </div>
+              </div>
+            </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            4 Step: CONFIRM ORDER
+           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#confirmOrder" aria-expanded="true" aria-controls="collapseThree">
+           <span class="pull-right"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+           </a>
+          </h4>
+        </div>
+        <div id="confirmOrder" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <form class="custom" role="form">
+                  <table class="table table-bordered table-hover">
+                    <thead>
+                      <tr class="text-uppercase">
+                        <th class="text-center">Product Name</th>
+                        <th class="text-center">Product Code</th>
+                        <th class="text-center">Unite Price</th>
+                        <th class="text-center">Quantity</th>
+                        <th class="text-center">Subtotal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                       <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                          <img src="assets/images/products/compare1.jpg" alt="">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p class="h4">Lowlands Lace Blouse</p>
+                            <p>Color: White</p>
+                            <p>Size: SM</p>
+                        </div>
+                        </div>
+                        </td>
+                        <td class="text-center"><br>MP125984154</td>
+                        <td class="text-center"><br>&dollar;1175</td>
+                        <td>
+                          <br><input type="number" class="form-control">
+                        </td>
+                        <td class="text-center"><br> &dollar;1175 <a href=""><span><i class="fa fa-times" aria-hidden="true"></i></span></a></td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="assets/images/products/compare2.jpg" alt="">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                              <p class="h4">Samsung Galaxy Ace</p>
+                              <p>Color: Red</p>
+                              <p>Size: XL</p>
+                        </div>
+                        </div>
+                        </td>
+                        <td class="text-center"><br>MP125984154</td>
+                        <td class="text-center"><br>&dollar;1475</td>
+                        <td>
+                            <br> <input type="number" class="form-control">
+                        </td>
+                        <td class="text-center"><br>&dollar;1475 <a href=""><span><i class="fa fa-times" aria-hidden="true"></i></span></a></td>
+                          </tr>
+                          <tr>
+                              <td colspan="4">
+                                  <div class="text-uppercase pull-right">Subtotal:</div>
+                              </td>
+                              <td class="text-center">
+                                  &dollar;399.44
+                              </td>
+                          </tr>
+                          <tr>
+                              <td colspan="4">
+                                  <div class="text-uppercase pull-right">Shipping:</div>
+                              </td>
+                              <td class="text-center">
+                                  &dollar;6.00
+                              </td>
+                          </tr>
+                          <tr>
+                              <td colspan="4">
+                                  <div class="text-uppercase pull-right">Tax(0%):</div>
+                              </td>
+                              <td class="text-center">
+                                  &dollar;0.00
+                              </td>
+                          </tr>
+                          <tr>
+                              <td colspan="4">
+                                  <div class="text-uppercase pull-right">Total:</div>
+                              </td>
+                              <td class="text-center">
+                                  &dollar;434.50
+                              </td>
+                          </tr>
+                          </tbody>
+                      </table>    
+                    </form>
+                    <div class="confirm pull-right">
+                        <button type="submit" class="btn btn-default text-uppercase">Confirm Order</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
+<!-- ======= Checkout Section Part End ======= -->
+
+
+<!-- =======  Sign Up  ======= -->
+ <section id="signUp">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-md-5" data-aos="fade-right" data-aos-delay="100">
+       <p class="h4 text-uppercase">Sign up to receive the latest fashion news</p>
+      </div>
+      <div class="col-sm-6 col-md-5 col-md-offset-2" data-aos="fade-right" data-aos-delay="100">
+        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+        <button type="button" class="btn btn-default text-uppercase">Sign up</button>
+      </div>
+    </div>
+  </div>
+ </section>
+<!-- =======  Sign Up Ends  ======= -->
+
+
+<!-- =======  Account Section  ======= -->
+ <section id="account">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-3 col-md-3" data-aos="fade-right" data-aos-delay="100">
+        <p class="h5 text-uppercase">My account</p>
+        <ul class="square-list">
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Personal Information</a></li>
+          <li><a href="#">Addresses</a></li>
+          <li><a href="#">Discount</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Your Vouchers</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-3" data-aos="fade-right" data-aos-delay="200">
+        <p class="h5 text-uppercase">Information</p>
+        <ul class="square-list">
+          <li><a href="#">New products</a></li>
+          <li><a href="#">Top sellers</a></li>
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">Manufacturers</a></li>
+          <li><a href="#">Suppliers</a></li>
+          <li><a href="#">Our stores</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-3" data-aos="fade-right" data-aos-delay="300">
+        <p class="h5 text-uppercase">Twitter feed</p>
+        <p class="twitter">searching twitter...</p>
+      </div>
+
+      <div class="col-sm-3 col-md-3" data-aos="fade-right" data-aos-delay="400">
+        <p class="h5 text-uppercase facebook">Facebook like box</p>
+        <iframe width="255" height="210" src="https://www.youtube.com/embed/NrmMk1Myrxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+ </section>
+<!-- =======  Account Section Ends ======= -->
+
+
+<!-- =======  Social Media Section  ======= -->
+ <section id="socialMedia">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-6 col-md-4" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0">
+        <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook facebook-margin" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.linkedin.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2F%3Foriginal_referer%3Dhttps%253A%252F%252Fwww.google.com%252F"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        <a href="https://www.skype.com/en/"><i class="fa fa-skype" aria-hidden="true"></i></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-md-offset-4" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0">
+        <p>&copy; 2023 Powered by Company<sup>TM</sup>.&nbsp; All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </div>
+ </section>
+<!-- =======  Social Media Section Ends  ======= -->
+
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/js/aos.js"></script>
+<script src="assets/vendor/jquery/js/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    
+
+<!-- Animation on scroll -->
+<script>
+  AOS.init({
+  duration:1000,
+  easing: "ease",
+})
+</script>
+
+</body>
+</html>
+
+

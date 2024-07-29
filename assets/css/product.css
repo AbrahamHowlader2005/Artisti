@@ -1,0 +1,3346 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Basic&family=Heebo:wght@500&family=Inconsolata:wght@900&family=Inter:wght@300&family=Italianno&family=Karla&family=Lato:ital@1&family=Lobster&family=Montserrat:ital,wght@0,500;1,200&family=Noto+Sans+Vithkuqi:wght@500&family=Nunito:wght@300&family=Open+Sans:wght@600&family=Passion+One&family=Playfair+Display&family=Poppins:wght@200;500&family=Quicksand&family=Raleway:ital,wght@0,500;1,600&family=Roboto+Mono:wght@600&family=Roboto+Slab&family=Roboto:wght@400;700&family=Titillium+Web:ital,wght@1,300&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Basic&family=Heebo:wght@500&family=Inconsolata:wght@900&family=Inter:wght@300&family=Italianno&family=Karla&family=Lato:ital@1&family=Lobster&family=Montserrat:ital,wght@0,500;1,200&family=Noto+Sans+Vithkuqi:wght@500&family=Nunito:wght@300&family=Open+Sans:wght@600&family=PT+Sans&family=Passion+One&family=Playfair+Display&family=Poppins:wght@200;500&family=Quicksand&family=Raleway:ital,wght@0,500;1,600&family=Roboto+Mono:wght@600&family=Roboto+Slab&family=Roboto:wght@400;700&family=Titillium+Web:ital,wght@1,300&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Basic&family=Heebo:wght@500&family=Inconsolata:wght@900&family=Inter:wght@300&family=Italianno&family=Karla&family=Lato:ital@1&family=Lobster&family=Montserrat:ital,wght@0,500;1,200&family=Noto+Sans+Vithkuqi:wght@500&family=Nunito:wght@300&family=Open+Sans:wght@600&family=Oswald&family=PT+Sans&family=Passion+One&family=Playfair+Display&family=Poppins:wght@200;500&family=Quicksand&family=Raleway:ital,wght@0,500;1,600&family=Roboto+Mono:wght@600&family=Roboto+Slab&family=Roboto:wght@400;700&family=Titillium+Web:ital,wght@1,300&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Basic&family=Catamaran&family=Heebo:wght@500&family=Inconsolata:wght@900&family=Inter:wght@300&family=Italianno&family=Karla&family=Lato:ital@1&family=Lobster&family=Montserrat:ital,wght@0,500;1,200&family=Noto+Sans+JP&family=Noto+Sans+Vithkuqi:wght@500&family=Nunito:wght@300&family=Open+Sans:wght@600&family=Oswald&family=PT+Sans&family=Passion+One&family=Playfair+Display&family=Poppins:wght@200;500&family=Quicksand&family=Raleway:ital,wght@0,500;1,600&family=Roboto+Mono:wght@600&family=Roboto+Slab&family=Roboto:wght@400;700&family=Titillium+Web:ital,wght@1,300&family=Ubuntu&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Basic&family=Catamaran&family=Heebo:wght@500&family=Inconsolata:wght@900&family=Inter:wght@300&family=Italianno&family=Karla&family=Lato:ital@1&family=Lobster&family=Montserrat:ital,wght@0,500;1,200&family=Noto+Sans+JP&family=Noto+Sans+Vithkuqi:wght@500&family=Nunito:wght@300&family=Open+Sans:wght@600&family=Oswald&family=PT+Sans&family=Passion+One&family=Playfair+Display&family=Poppins:wght@200;500&family=Quicksand&family=Raleway:ital,wght@0,500;1,600&family=Roboto+Mono:wght@600&family=Roboto+Slab&family=Roboto:wght@400;700&family=Titillium+Web:ital,wght@1,300&family=Work+Sans&display=swap");
+#header {
+  font-family: 'Roboto', sans-serif;
+}
+
+#navigation_bar {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.h4, .h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn-default {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#account {
+  font-family: 'Catamaran', sans-serif;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+#header {
+  border-top: 4px solid #ff7579;
+  background-color: #f5f5f5;
+  font-size: 13px;
+  color: grey;
+}
+#header .my_info > .fa {
+  margin-right: 9px;
+  margin-top: 11px;
+}
+#header .my_info > .fa span {
+  font-family: 'Roboto', sans-serif;
+}
+#header div > p {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 2px;
+  margin-top: 8px;
+}
+#header .currency p:first-child {
+  margin-left: 77px;
+}
+#header div > p:hover {
+  color: black;
+}
+#header .my_info > .fa:hover {
+  color: black;
+}
+
+#navigation_bar .navbar {
+  min-height: 115px;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#navigation_bar .navbar-default {
+  background-color: transparent;
+  border: transparent;
+}
+#navigation_bar .navbar-brand {
+  padding-left: 0;
+}
+#navigation_bar .navbar-brand > img {
+  float: left;
+}
+#navigation_bar .navbar-brand > .img-responsive {
+  border: 2px solid transparent;
+  background-color: #3b3a3a;
+  width: 40px;
+  padding: 9px;
+  margin-top: 58px;
+  margin-left: 0;
+}
+#navigation_bar .navbar-brand > img:last-child {
+  margin-top: 24px;
+  margin-left: 15px;
+}
+#navigation_bar .navbar-collapse > p {
+  margin-top: 12px;
+  color: grey;
+  font-size: 13px;
+  margin-right: 36px;
+}
+#navigation_bar .navbar-nav > li > a {
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 11px;
+  margin-left: 26px;
+  border-bottom: 4px solid white;
+}
+#navigation_bar .navbar-nav .fa {
+  margin-top: 27px;
+  margin-right: 47px;
+  margin-left: 14px;
+  color: grey;
+  font-size: 15px;
+}
+#navigation_bar .navbar-nav .fa:hover {
+  color: black;
+  font-size: 17px;
+}
+#navigation_bar .navbar-nav > li > a:hover {
+  color: black;
+  border-bottom: 4px solid #ff7579;
+}
+#navigation_bar .navbar-nav > .active > a {
+  background-color: transparent;
+  color: black;
+  border-bottom: 4px solid #ff7579;
+  padding-bottom: 15px;
+}
+#navigation_bar .navbar-nav li {
+  animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-fill-mode: both;
+}
+#navigation_bar .navbar-nav li:nth-child(1) {
+  animation-delay: 0.4s;
+}
+#navigation_bar .navbar-nav li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+#navigation_bar .navbar-nav li:nth-child(3) {
+  animation-delay: 0.8s;
+}
+#navigation_bar .navbar-nav li:nth-child(4) {
+  animation-delay: 1.0s;
+}
+#navigation_bar .navbar-nav li:nth-child(5) {
+  animation-delay: 1.2s;
+}
+#navigation_bar .navbar-nav li:nth-child(6) {
+  animation-delay: 1.4s;
+}
+
+#sub_header .red {
+  background-color: #ff7579;
+  height: 50px;
+  padding-top: 10px;
+}
+#sub_header .fa-angle-right {
+  color: #ffffff;
+}
+#sub_header a {
+  color: #ffffff;
+}
+
+#slider {
+  height: 400px;
+  background-color: #ffffff;
+  /* Changes the position of the indicators */
+}
+#slider p {
+  line-height: 25px;
+  padding-top: 60px;
+}
+#slider #quote-carousel .carousel-indicators {
+  right: 50%;
+  margin-top: 300px;
+  bottom: 0;
+  background-color: #ff7579;
+}
+
+.head {
+  font-size: 30px;
+  font-weight: 500px;
+}
+
+.color {
+  color: gray;
+}
+
+.white {
+  background-color: #ffffff;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  box-shadow: 0px 0px 2px gray;
+}
+
+.gray {
+  background-color: #d1d2d4;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+
+.light-dark {
+  background-color: #666467;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+
+.black {
+  background-color: #515151;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+
+.powderblue {
+  background-color: #bcdae6;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+
+.blue {
+  background-color: #5272b3;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+
+.green {
+  background-color: #acbf0b;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+
+.color-div {
+  margin-left: -20px;
+}
+
+input {
+  width: 80px;
+  height: 30px;
+}
+
+.label {
+  background-color: black;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.fa-star {
+  color: goldenrod;
+}
+
+.fa-star:hover {
+  color: gold;
+  transition: 2s;
+}
+
+.icon-group-btn a {
+  margin: 10px 0;
+  float: left;
+  width: 40px;
+  margin-right: 5px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+}
+
+.icon-group-btn a.btn-compare {
+  margin-right: 0;
+}
+
+.icon-group-btn a span {
+  float: left;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.icon-group-btn .icon-cart, .icon-group-btn .icon-wishlist, .icon-group-btn .icon-compare {
+  width: 40px;
+  height: 32px;
+}
+
+.icon-group-btn .icon-cart {
+  background: url("icon-a-w-c.png") #ff7579 no-repeat 8px 8px;
+}
+
+.icon-group-btn .icon-wishlist {
+  background: url("icon-a-w-c.png") #ff7579 no-repeat 8px -66px;
+}
+
+.icon-group-btn .icon-compare {
+  background: url(icon-a-w-c.png) #ff7579 no-repeat 7px center;
+}
+
+.icon-group-btn .icon-cart-text {
+  text-indent: -40px;
+  width: 0;
+  height: 32px;
+  font-size: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #ff7579;
+  transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+}
+
+.icon-group-btn .icon-wishlist-text {
+  text-indent: -40px;
+  width: 0;
+  height: 32px;
+  color: #ffffff;
+  font-size: 100%;
+  overflow: hidden;
+  background-color: #ff7579;
+  transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+}
+
+.fa-heart {
+  color: #ffffff;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.check_alter {
+  color: #ffffff;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.price {
+  height: 100px;
+  width: 100px;
+  font-size: 30px;
+  border-radius: 100%;
+  background-color: #ff7579;
+  color: #ffffff;
+  padding-left: 17px;
+  padding-top: 25px;
+  position: relative;
+  left: 320px;
+  top: -90px;
+}
+
+.nav-tabs li {
+  background-color: #ff7579;
+  border-radius: 4px;
+}
+.nav-tabs a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.imgHover {
+  position: relative;
+  height: 281px;
+  width: 450px;
+  margin: 0 auto;
+}
+.imgHover img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+.imgHover img.top:hover {
+  opacity: 0;
+}
+
+#shoe .price {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#blazer .price {
+  margin-top: 100px;
+}
+
+#signUp {
+  background-color: #e5e6e5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#signUp .h4 {
+  font-size: 20px;
+  margin-left: 41px;
+}
+#signUp .form-control {
+  float: left;
+  width: 70%;
+  height: 36px;
+  border: 3px solid white;
+  background-color: transparent;
+  margin-right: 8px;
+  margin-left: 24px;
+}
+#signUp .btn-default {
+  width: 80px;
+  height: 35px;
+  border-radius: 0;
+  background-color: #575a59;
+  border: transparent;
+  color: white;
+  font-size: 13px;
+}
+
+#account {
+  background-color: #eeefee;
+  padding-top: 65px;
+  padding-bottom: 110px;
+}
+#account .square-list {
+  list-style-type: square;
+}
+#account div > ul {
+  padding-left: 60px;
+  color: grey;
+}
+#account div > ul > li {
+  padding-bottom: 14px;
+}
+#account div > ul > li > a {
+  color: grey;
+  text-decoration: none;
+}
+#account div > ul > li > a:hover {
+  color: black;
+}
+#account .h5 {
+  padding-left: 44px;
+  margin-bottom: 35px;
+  word-spacing: 1px;
+}
+#account .twitter {
+  padding-left: 44px;
+  color: grey;
+}
+#account .facebook {
+  padding-left: 0;
+  margin-bottom: 28px;
+}
+
+#socialMedia {
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+#socialMedia .fa {
+  color: white;
+  font-size: 17px;
+  border: 1px solid transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  padding: 6px 4px 4px 6px;
+  background-color: #949393;
+  margin-left: 5px;
+}
+#socialMedia .facebook-margin {
+  margin-left: 50px;
+  padding-left: 10px;
+}
+#socialMedia p {
+  color: #848282;
+  margin-top: 6px;
+  margin-left: 20px;
+}
+#socialMedia .fa:hover {
+  background-color: #696363;
+}
+
+#footer {
+  background-color: #dcdcdc;
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  #header {
+    font-size: 10px;
+  }
+  #header .currency p:first-child {
+    margin-left: 0px;
+  }
+  #header div > p {
+    margin-left: 15px;
+  }
+
+  #navigation_bar .navbar {
+    min-height: 84px;
+  }
+  #navigation_bar .navbar-brand > .img-responsive {
+    width: 20px;
+    padding: 3px;
+    margin-top: 48px;
+  }
+  #navigation_bar .navbar-brand > img:last-child {
+    margin-top: 0px;
+    margin-left: 5px;
+    width: 170px;
+  }
+  #navigation_bar .navbar-toggle {
+    margin-top: 25px;
+  }
+  #navigation_bar .navbar-default .navbar-collapse {
+    border-color: transparent;
+  }
+  #navigation_bar .navbar-nav > li > a {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  #navigation_bar .navbar-nav > .active > a {
+    width: 79px;
+    border-bottom: 4px solid #ff7579;
+    padding-bottom: 3px;
+  }
+  #navigation_bar .navbar-nav > li > a:hover {
+    border-bottom: 4px solid transparent;
+    padding-bottom: 3px;
+  }
+
+  #signUp {
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+  #signUp .h4 {
+    font-size: 15px;
+    margin-left: 18px;
+  }
+  #signUp .form-control {
+    width: 65%;
+    height: 27px;
+    font-size: 12px;
+  }
+  #signUp .btn-default {
+    width: 55px;
+    height: 27px;
+    font-size: 9px;
+    padding: 6px;
+  }
+
+  #account {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  #account .h5 {
+    padding-left: 28px;
+    margin-bottom: 20px;
+  }
+  #account div > ul {
+    padding-left: 42px;
+  }
+  #account div > ul > li {
+    padding-bottom: 12px;
+  }
+  #account .twitter {
+    padding-left: 29px;
+    margin-bottom: 16px;
+  }
+  #account iframe {
+    padding-left: 26px;
+    margin-top: 8px;
+    width: 230px;
+    height: 190px;
+  }
+
+  #socialMedia {
+    padding-bottom: 0px;
+    padding-top: 15px;
+  }
+  #socialMedia .fa {
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    padding: 4px 5px 5px 5px;
+    margin-left: 5px;
+  }
+  #socialMedia .facebook-margin {
+    margin-left: 18px;
+    padding-left: 8px;
+  }
+  #socialMedia p {
+    font-size: 11px;
+    margin-left: 14px;
+    margin-top: 12px;
+  }
+
+  #footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #header {
+    font-size: 12px;
+  }
+  #header .my_info > .fa {
+    margin-right: 5px;
+    margin-top: 7px;
+  }
+  #header div > p {
+    margin-left: 10px;
+    margin-bottom: 4px;
+    margin-top: 5px;
+  }
+
+  #navigation_bar .navbar {
+    min-height: 104px;
+  }
+  #navigation_bar .navbar-brand > img:last-child {
+    margin-top: 16px;
+    margin-left: 8px;
+    width: 200px;
+  }
+  #navigation_bar .navbar-brand > .img-responsive {
+    width: 30px;
+    padding: 6px;
+  }
+  #navigation_bar .navbar-nav > li > a {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-left: 2px;
+  }
+  #navigation_bar .navbar-collapse > p {
+    font-size: 12px;
+  }
+  #navigation_bar .navbar-nav .fa {
+    margin-top: 18px;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  #navigation_bar .navbar-nav .fa:hover {
+    font-size: 15px;
+  }
+  #navigation_bar .navbar-nav > .active > a {
+    padding-bottom: 10px;
+  }
+  #navigation_bar .navbar-nav > li > a:hover {
+    border-bottom: 4px solid transparent;
+  }
+
+  #signUp {
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+  #signUp .h4 {
+    font-size: 15px;
+  }
+  #signUp .form-control {
+    width: 60%;
+    height: 30px;
+    margin-top: 3px;
+  }
+  #signUp .btn-default {
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  #account {
+    padding-top: 65px;
+    padding-bottom: 110px;
+  }
+  #account iframe {
+    width: 175px;
+    height: 190px;
+  }
+  #account div > ul {
+    padding-left: 55px;
+  }
+
+  #socialMedia {
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
+  #socialMedia .facebook-margin {
+    margin-left: 38px;
+  }
+  #socialMedia p {
+    margin-top: 6px;
+    margin-left: 10px;
+  }
+
+  #footer {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -80px;
+  }
+  #Product h1 {
+    font-size: 20px;
+  }
+  #Product .para {
+    font-size: 10px;
+  }
+
+  #jacket img {
+    height: 350px;
+    width: 350px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 70px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 10px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #blazer img {
+    height: 350px;
+    width: 350px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .icon {
+    margin-left: 200px;
+  }
+  #blazer .review {
+    margin-left: 70px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #blazer .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #shoe img {
+    height: 350px;
+    width: 350px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .icon {
+    margin-left: 200px;
+  }
+  #shoe .review {
+    margin-left: 70px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: -100px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 180px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -90px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-4 {
+    position: relative;
+    top: -140px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #shoe .img-5 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -80px;
+  }
+  #Product h1 {
+    font-size: 20px;
+  }
+  #Product .para {
+    font-size: 10px;
+  }
+
+  #jacket img {
+    height: 350px;
+    width: 350px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 70px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 10px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #blazer img {
+    height: 350px;
+    width: 350px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .icon {
+    margin-left: 200px;
+  }
+  #blazer .review {
+    margin-left: 70px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -260px;
+    right: 20px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    margin-top: 100px;
+  }
+  #blazer .para-4 {
+    position: relative;
+    top: -180px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #shoe img {
+    height: 350px;
+    width: 350px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .icon {
+    margin-left: 200px;
+  }
+  #shoe .review {
+    margin-left: 70px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 180px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -90px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-4 {
+    position: relative;
+    top: -140px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 870px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -80px;
+  }
+  #Product h1 {
+    font-size: 20px;
+  }
+  #Product .para {
+    font-size: 10px;
+  }
+
+  #jacket img {
+    height: 350px;
+    width: 350px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 70px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 10px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #blazer img {
+    height: 350px;
+    width: 350px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .icon {
+    margin-left: 200px;
+  }
+  #blazer .review {
+    margin-left: 70px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -260px;
+    right: 20px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    margin-top: 100px;
+  }
+  #blazer .para-4 {
+    position: relative;
+    top: -180px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #shoe img {
+    height: 350px;
+    width: 350px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .icon {
+    margin-left: 200px;
+  }
+  #shoe .review {
+    margin-left: 70px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 180px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -90px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-4 {
+    position: relative;
+    top: -140px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 850px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -80px;
+  }
+  #Product h1 {
+    font-size: 20px;
+  }
+  #Product .para {
+    font-size: 10px;
+  }
+
+  #jacket img {
+    height: 350px;
+    width: 350px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 70px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 10px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #blazer img {
+    height: 350px;
+    width: 350px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .icon {
+    margin-left: 200px;
+  }
+  #blazer .review {
+    margin-left: 70px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -260px;
+    right: 20px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    margin-top: 100px;
+  }
+  #blazer .para-4 {
+    position: relative;
+    top: -180px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #shoe img {
+    height: 350px;
+    width: 350px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .icon {
+    margin-left: 200px;
+  }
+  #shoe .review {
+    margin-left: 70px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 180px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -90px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-4 {
+    position: relative;
+    top: -140px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -80px;
+  }
+  #Product h1 {
+    font-size: 20px;
+  }
+  #Product .para {
+    font-size: 10px;
+  }
+
+  #jacket img {
+    height: 350px;
+    width: 350px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 70px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 10px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #blazer img {
+    height: 350px;
+    width: 350px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .icon {
+    margin-left: 200px;
+  }
+  #blazer .review {
+    margin-left: 70px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -260px;
+    right: 20px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    margin-top: 100px;
+  }
+  #blazer .para-4 {
+    position: relative;
+    top: -180px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #shoe img {
+    height: 350px;
+    width: 350px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .icon {
+    margin-left: 200px;
+  }
+  #shoe .review {
+    margin-left: 70px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 180px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -90px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-4 {
+    position: relative;
+    top: -140px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -80px;
+  }
+  #Product h1 {
+    font-size: 20px;
+  }
+  #Product .para {
+    font-size: 10px;
+  }
+
+  #jacket img {
+    height: 350px;
+    width: 350px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 70px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 10px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #blazer img {
+    height: 350px;
+    width: 350px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .icon {
+    margin-left: 200px;
+  }
+  #blazer .review {
+    margin-left: 70px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -260px;
+    right: 20px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    margin-top: 100px;
+  }
+  #blazer .para-4 {
+    position: relative;
+    top: -180px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #shoe img {
+    height: 350px;
+    width: 350px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .icon {
+    margin-left: 200px;
+  }
+  #shoe .review {
+    margin-left: 70px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 180px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -90px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-4 {
+    position: relative;
+    top: -140px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 770px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -80px;
+  }
+  #Product h1 {
+    font-size: 20px;
+  }
+  #Product .para {
+    font-size: 10px;
+  }
+
+  #jacket img {
+    height: 350px;
+    width: 350px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 70px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 10px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #blazer img {
+    height: 350px;
+    width: 350px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .icon {
+    margin-left: 200px;
+  }
+  #blazer .review {
+    margin-left: 70px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -260px;
+    right: 20px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    margin-top: 100px;
+  }
+  #blazer .para-4 {
+    position: relative;
+    top: -180px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #shoe img {
+    height: 350px;
+    width: 350px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .icon {
+    margin-left: 200px;
+  }
+  #shoe .review {
+    margin-left: 70px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 180px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -90px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-4 {
+    position: relative;
+    top: -140px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -80px;
+  }
+  #Product h1 {
+    font-size: 20px;
+  }
+  #Product .para {
+    font-size: 10px;
+  }
+
+  #jacket img {
+    height: 350px;
+    width: 350px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 70px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 10px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: -20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: -140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #blazer img {
+    height: 350px;
+    width: 350px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .icon {
+    margin-left: 200px;
+  }
+  #blazer .review {
+    margin-left: 70px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -70px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 5px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -100px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -260px;
+    right: 20px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    margin-top: 100px;
+  }
+  #blazer .para-4 {
+    position: relative;
+    top: -180px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #shoe img {
+    height: 350px;
+    width: 350px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .icon {
+    margin-left: 200px;
+  }
+  #shoe .review {
+    margin-left: 70px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: 50px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -90px;
+    right: 25px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 180px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: -30px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -90px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -220px;
+    right: 20px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 200px;
+  }
+  #shoe .para-4 {
+    position: relative;
+    top: -140px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -280px;
+    right: 40px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -200px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #sub_header {
+    text-align: center;
+  }
+
+  #slider img {
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    float: left;
+  }
+  #slider p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #Product {
+    position: relative;
+    top: -200px;
+  }
+  #Product .h1 {
+    font-size: 30px;
+  }
+  #Product .para {
+    font-size: 10px;
+    padding-bottom: -10px;
+  }
+
+  #jacket img {
+    height: 300px;
+    width: 300px;
+  }
+  #jacket .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #jacket p {
+    text-align: center;
+  }
+  #jacket .star {
+    display: block;
+    text-align: center;
+  }
+  #jacket .icon {
+    margin-left: 200px;
+  }
+  #jacket .review {
+    margin-left: 190px;
+  }
+  #jacket .col-sm-2 {
+    display: none;
+  }
+  #jacket hr {
+    display: none;
+  }
+  #jacket .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #jacket .img-2 {
+    position: relative;
+    top: -350px;
+    right: -25px;
+  }
+  #jacket .img-2 .price {
+    position: relative;
+    left: 20px;
+  }
+  #jacket .para-2 {
+    position: relative;
+    top: 250px;
+  }
+  #jacket .para-1 {
+    position: relative;
+    top: -70px;
+  }
+  #jacket .img-1 .price {
+    position: relative;
+    left: 290px;
+  }
+  #jacket .img-3 {
+    position: relative;
+    top: -160px;
+  }
+  #jacket .img-3 .price {
+    position: relative;
+    left: 290px;
+  }
+  #jacket .para-3 {
+    position: relative;
+    top: -200px;
+  }
+  #jacket .img-4 {
+    position: relative;
+    top: -460px;
+    left: 25px;
+  }
+  #jacket .img-4 .price {
+    position: relative;
+    left: 20px;
+  }
+  #jacket .par-4 {
+    position: relative;
+    top: 140px;
+  }
+  #jacket .img-5 {
+    position: relative;
+    top: -280px;
+    left: 10px;
+  }
+  #jacket .para-5 {
+    position: relative;
+    top: -330px;
+  }
+
+  #blazer img {
+    height: 300px;
+    width: 300px;
+  }
+  #blazer .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #blazer p {
+    text-align: center;
+  }
+  #blazer .star {
+    display: block;
+    text-align: center;
+  }
+  #blazer .review {
+    margin-left: 250px;
+  }
+  #blazer .col-sm-2 {
+    display: none;
+  }
+  #blazer hr {
+    display: none;
+  }
+  #blazer .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #blazer .img-2 {
+    position: relative;
+    top: -350px;
+    left: 140px;
+  }
+  #blazer .img-2 .price {
+    position: relative;
+    left: -100px;
+  }
+  #blazer .para-2 {
+    position: relative;
+    top: 200px;
+  }
+  #blazer .para-1 {
+    position: relative;
+    top: -130px;
+  }
+  #blazer .img-3 {
+    position: relative;
+    top: -230px;
+  }
+  #blazer .img-3 .price {
+    position: relative;
+    left: 290px;
+  }
+  #blazer .para-3 {
+    position: relative;
+    top: -350px;
+  }
+  #blazer .img-4 {
+    position: relative;
+    top: -580px;
+    left: 140px;
+  }
+  #blazer .img-4 .price {
+    position: relative;
+    left: -100px;
+  }
+  #blazer .par-4 {
+    position: relative;
+    top: 90px;
+  }
+  #blazer .img-5 {
+    position: relative;
+    top: -440px;
+    left: 10px;
+  }
+  #blazer .para-5 {
+    position: relative;
+    top: -570px;
+  }
+  #blazer .price {
+    position: relative;
+    top: -180px;
+  }
+
+  #shoe img {
+    height: 300px;
+    width: 300px;
+    margin-left: 80px;
+  }
+  #shoe .head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #shoe p {
+    text-align: center;
+  }
+  #shoe .star {
+    display: block;
+    text-align: center;
+  }
+  #shoe .review {
+    margin-left: 130px;
+  }
+  #shoe .col-sm-2 {
+    display: none;
+  }
+  #shoe hr {
+    display: none;
+  }
+  #shoe .icon-group-btn {
+    margin-top: -50px;
+    padding-left: -100px;
+    margin-left: 30px;
+  }
+  #shoe .price {
+    position: relative;
+    top: -170px;
+    left: 5px;
+  }
+  #shoe .img-1 .price {
+    position: relative;
+    left: 300px;
+  }
+  #shoe .img-2 {
+    position: relative;
+    top: -350px;
+  }
+  #shoe .img-2 .price {
+    position: relative;
+    left: 300px;
+  }
+  #shoe .para-2 {
+    position: relative;
+    top: 200px;
+  }
+  #shoe .para-1 {
+    position: relative;
+    top: -130px;
+  }
+  #shoe .img-3 {
+    position: relative;
+    top: -230px;
+  }
+  #shoe .img-3 .price {
+    position: relative;
+    left: 300px;
+  }
+  #shoe .para-3 {
+    position: relative;
+    top: -350px;
+  }
+  #shoe .img-4 {
+    position: relative;
+    top: -580px;
+  }
+  #shoe .img-4 .price {
+    position: relative;
+    left: 300px;
+  }
+  #shoe .par-4 {
+    position: relative;
+    top: 90px;
+  }
+  #shoe .img-5 {
+    position: relative;
+    top: -440px;
+  }
+  #shoe .img-5 .price {
+    position: relative;
+    left: 300px;
+  }
+  #shoe .para-5 {
+    position: relative;
+    top: -570px;
+  }
+
+  #overview {
+    position: relative;
+    top: -300px;
+    left: 10px;
+  }
+}
